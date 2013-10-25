@@ -18,9 +18,10 @@ footer {
 	margin-left: -10px;
 	margin-top: -21px;
 	margin-right:-50px;
-	background-color: black;
+	background-color: lightgrey;
 	color: white;
 	position: absolute;
+	border-radius: 7%;
 }
 
 header h1 {
