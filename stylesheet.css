@@ -48,9 +48,45 @@ footer p {
 	vertical-align: middle;
 }
 
-#body p {
-	color: red;
+#body {
+	display: fixed;
+	color: #FFFFCC;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	padding-top: 100px;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 30px;
 }
+
+#body p {
+	position: relative;
+	border: 1px solid blue;
+}
+
+#speaking,
+#learning {
+	color: #FFFFCC;
+	width: 50px;
+	height: 50px;
+	display: block;
+	padding-top: 400px;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 30px;
+	
+	padding-right: 50px;
+}
+
+#learning {
+	float:right;
+}
+
+#speaking {
+	float: left;
+	padding-left: 30px;
+}
+
+
 
 
 
