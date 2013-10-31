@@ -1,24 +1,119 @@
 <!DOCTYPE html>
 <head>
-	<title> Jejune </title>
-	<link rel= "stylesheet" href="stylesheet.css">
-	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+<title> Jejune </title>
+<link rel= "stylesheet" href="stylesheet.css">
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#speak").click(function(){
+    $(".speakingbox").fadeToggle();
+  });
+});
+$(document).ready(function(){
+  $("#write").click(function(){
+    $(".writingbox").fadeToggle();
+
+  });
+});
+$(document).ready(function(){
+  $("#learn").click(function(){
+    $(".learningbox").fadeToggle();
+
+
+  });
+});
+$(document).ready(function(){
+  $("#speak").click(function(){
+    $("#welcome").css("display", "none");
+    
+
+  });
+});
+$(document).ready(function(){
+  $("#learn").click(function(){
+    $("#welcome").css("display", "none");
+    
+
+  });
+});
+$(document).ready(function(){
+  $("#write").click(function(){
+    $("#welcome").css("display", "none");
+    
+  });
+});
+</script>
+
 </head>
 <body>
-	<header>
-		<h1 class="top"> Jejune </h1>
-	</header>
-	<div id="body">
-		<p> Writing </p>
+<header>
+<h1 class="top"> Jejune </h1>
+</header>
+<div class="container">
+<div class="centerwrapper">
+<div class="speaking">
+<p id="speak">Click to fade in/out ovvehrherherh boxes</p></div>
+<div class="writing">
+	<p id="write">GEEX LOUsadiasdhadjhadisSIE</p>
+</div>
+<div class="learning">
+	<p id="learn">Click toadjashdjksahkjh disappear</p>
+</div>
+</div>
+</div>
+<div id="boxes">
+	<div id="welcome">
+		Hi my name is Oskar and I am trying my best.
+	</div>
+	<div class="speakingbox">
+		<video width="320" height="240" controls>
+		  <source src="20under20.mp4" type="video/mp4">
+		  <source src="movie.ogg" type="video/ogg">
+		  <source src="movie.webm" type="video/webm">
+		  <object data="20under20.mp4" width="320" height="240">
+		    <embed src="20under20.swf" width="320" height="240">
+		  </object> 
+		</video>
+		<br>
+		<video width="320" height="240" controls>
+		  <source src="ted.mp4" type="video/mp4">
+		  <source src="movie.ogg" type="video/ogg">
+		  <source src="movie.webm" type="video/webm">
+		  <object data="ted.mp4" width="320" height="240">
+		    <embed src="ted.swf" width="320" height="240">
+		  </object> 
+		</video>
+		<br>
+
+		<a id="hover" href="http://www.youtube.com/user/kacperniburski">Youtube Channel</a>
+		
+		
+	</div>
+	<div class="writingbox">
+		some examples:
+		http://www.lulu.com/shop/oskar-niburski/stretched-marks/paperback/product-21272770.html
+
+		http://jacobzrobin.wordpress.com/
+		http://www.thesil.ca/getting-past-universitys-disappointments
+		http://themissingslate.com/2011/10/14/september-by-oskar-niburski/
 	</div>
 
-	<div id="speaking">
-		<p> Speaking </p>
+	<div class="learningbox">
+		https://github.com/raksonibs
+		http://www.science.mcmaster.ca/wise/files/CREST_2012%20Proceedings%20FINAL.pdf
+		coursera, udacity, edx, medical school, university
 	</div>
+</div>
 
-	<div id="learning">
-		<p> Learning </p>
-	</div>
+
+<!--
+	<iframe id ="iframe"src="http://www.youtube.com/user/kacperniburski">
+	wANT TO BUILD A POPUP WHEN OVER OVER A TAG
+	
+	<div class="writingbox"> hello hello</div>
+<div class="learningbox"> hello hello</div>
 	<footer>
 		<p> Contact me </p>
 		<p> 905-575-5111 </p>
@@ -26,4 +121,5 @@
 		<a href="open email?">oskarniburski@gmail.com</a>
 
 	</footer>
+-->
 </body>

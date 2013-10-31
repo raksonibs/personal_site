@@ -6,6 +6,81 @@ html {
   background-size: cover;
 }
 
+.speaking,
+.learning,
+.writing {
+
+	width: 50vw;
+	height: 28vh;
+
+    margin: 5px;
+    color: #000 ;
+	background-color: #ffb200 ;
+	border: 1px outset #b37d00 ;
+	text-decoration: none ;
+	float: left;
+
+
+}
+
+iframe {
+	position: absolute;
+	z-index: 1;
+	height: 400px;
+	width: 400px;
+}
+
+#boxes {
+
+	float: right;
+	width: 45vw;
+	height: 87vh;
+	margin-top:66px;
+	border: 1px solid black;
+	background-color: grey;
+	
+
+}
+
+#welcome {
+	z-index: 100;
+	background-color: red;
+	width: 45vw;
+	height: 87vh;
+}
+.speakingbox,
+.learningbox,
+.writingbox,
+{
+	position: absolute;
+	display: block;
+	border: 1px solid block;
+	
+	
+	
+
+	
+
+
+	
+}
+
+.container {
+	position: absolute;
+    text-align: center;
+
+    width: 96vw;
+
+}
+
+.centerwrapper
+    {
+       margin: auto;
+       margin-top: 60px;
+
+
+    }
+
 footer p {
 	display: inline;
 	text-align: center;
@@ -40,7 +115,7 @@ footer:hover {
 }
 
 header h1 {
-	text-align: center;
+	padding-left: 10px;
 	margin-top: 10px;
 }
 
@@ -48,42 +123,10 @@ footer p {
 	vertical-align: middle;
 }
 
-#body {
-	display: fixed;
-	color: #FFFFCC;
-	width: 50px;
-	height: 50px;
-	margin: auto;
-	padding-top: 100px;
-	font-family: 'Reenie Beanie', cursive;
-	font-size: 30px;
-}
-
-#body p {
-	position: relative;
-	border: 1px solid blue;
-}
-
-#speaking,
-#learning {
-	color: #FFFFCC;
-	width: 50px;
-	height: 50px;
-	display: block;
-	padding-top: 400px;
-	font-family: 'Reenie Beanie', cursive;
-	font-size: 30px;
-	
-	padding-right: 50px;
-}
-
-#learning {
-	float:right;
-}
-
-#speaking {
-	float: left;
-	padding-left: 30px;
+.top {
+  background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
 }
 
 
