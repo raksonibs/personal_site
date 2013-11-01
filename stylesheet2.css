@@ -78,12 +78,21 @@ div.content {
 	right:10px;
 	top: 83px;
 	visibility: hidden;
-	background-color: #7AA3CC;
+	background-color: rgba(06,32,23,0.5);
 	margin: auto;
 	overflow: hidden;
 
 }
 
+p.images {
+	overflow: hidden;
+
+}
+p.images img {
+	width: 20vw;
+	height: 20vh;
+	overflow: hidden;
+}
 .welcome {
 	visibility: visible;
 }
