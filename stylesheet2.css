@@ -1,0 +1,63 @@
+html {
+	background-color: grey;
+}
+
+.speakingbox,
+.writingbox,
+.learningbox {
+	width: 45vw;
+	height: 29vh;
+	border: 1px solid black;
+	background-color: #7AA3CC;
+}
+
+a img#book {
+	width: 40vw;
+	height: 40vh;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+span.contact {
+	float:right;
+	font-size:30px;
+}
+
+div.content {
+	border: 3px solid red;
+	overflow: hidden;
+}
+
+.write,
+.speak,
+.learn,
+.welcome {
+	width: 45vw;
+	height: 88vh;
+	border: 1px solid blue;
+	position: absolute;
+	right:10px;
+	top: 83px;
+	visibility: hidden;
+	background-color: #7AA3CC;
+	margin: auto;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+}
+
+.welcome {
+	visibility: visible;
+}
+
+.speakingbox p,
+.writingbox p,
+.learningbox p {
+	text-align: center;
+
+}
+
+header {
+	background-color: #9D9DB1;
+}

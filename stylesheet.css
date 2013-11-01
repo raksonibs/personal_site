@@ -20,7 +20,6 @@ html {
 	text-decoration: none ;
 	float: left;
 
-
 }
 
 iframe {
@@ -38,7 +37,7 @@ iframe {
 	margin-top:66px;
 	border: 1px solid black;
 	background-color: grey;
-	
+	visibility: hidden;
 
 }
 
@@ -55,14 +54,8 @@ iframe {
 	position: absolute;
 	display: block;
 	border: 1px solid block;
-	
-	
-	
+	visibility: hidden;
 
-	
-
-
-	
 }
 
 .container {
@@ -77,14 +70,11 @@ iframe {
     {
        margin: auto;
        margin-top: 60px;
-
-
     }
 
 footer p {
 	display: inline;
 	text-align: center;
-
 }
 
 footer {
@@ -128,6 +118,8 @@ footer p {
   color:transparent;
   -webkit-background-clip: text;
 }
+
+
 
 
 
