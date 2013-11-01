@@ -1,22 +1,33 @@
 html {
-	background-color: grey;
+	background: url(chair.JPG) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .speakingbox,
 .writingbox,
 .learningbox {
 	width: 45vw;
-	height: 29vh;
+	height: 30vh;
 	border: 1px solid black;
 	background-color: #7AA3CC;
 }
 
-a img#book {
-	width: 40vw;
-	height: 40vh;
-	margin: auto;
+a img#sil,
+a img#slate {
+	width: 45vw;
+	height: 19vh;
 	overflow: hidden;
+}
 
+a img#book,
+a img#incite,
+a img#blog {
+	width: 50vw;
+	height: 19vh;
+	overflow: hidden;
 }
 
 span.contact {
@@ -29,12 +40,39 @@ div.content {
 	overflow: hidden;
 }
 
+.writingbox {
+	background: url(mars.png) no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	color: white;
+}
+
+.speakingbox {
+	background: url(mic.jpg) no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	color: white;
+}
+
+.learningbox {
+	background: url(learn3.png) no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	color: white;
+}
+
 .write,
 .speak,
 .learn,
 .welcome {
 	width: 45vw;
-	height: 88vh;
+	height: 90vh;
 	border: 1px solid blue;
 	position: absolute;
 	right:10px;
@@ -43,8 +81,7 @@ div.content {
 	background-color: #7AA3CC;
 	margin: auto;
 	overflow: hidden;
-	margin: auto;
-	text-align: center;
+
 }
 
 .welcome {
