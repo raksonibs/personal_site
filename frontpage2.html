@@ -4,13 +4,15 @@
 <link rel= "stylesheet" href="stylesheet2.css">
 <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+
 </script>
+<script src="jquery.masonry.min.js"></script>
 <script>
 $(document).ready(function(){
   $("#s").click(function(){
     $(".speak").css("visibility","visible");
     $(".write").css("visibility","hidden");
-    $(".learn").css("visibility","hidden");
+    $("#learn").css("visibility","hidden");
     $(".welcome").css("visibility","hidden");
   });
 });
@@ -18,18 +20,23 @@ $(document).ready(function(){
   $("#w").click(function(){
     $(".write").css("visibility","visible");
     $(".speak").css("visibility","hidden");
-    $(".learn").css("visibility","hidden");
+    $("#learn").css("visibility","hidden");
     $(".welcome").css("visibility","hidden");
   });
 });
 $(document).ready(function(){
   $("#l").click(function(){
-    $(".learn").css("visibility","visible");
+    $("#learn").css("visibility","visible");
     $(".speak").css("visibility","hidden");
     $(".write").css("visibility","hidden");
     $(".welcome").css("visibility","hidden");
   });
 });
+    $(function(){
+  $('#learn').masonry(
+  {});
+});
+   
 </script>
 
 </head>
@@ -54,7 +61,7 @@ $(document).ready(function(){
 			<p> HI! My name is Oskar Niburski. I have been trying my best for 21 years. I love chemistry and have taken a knack to computer science. My hobbies include pulling pranks on my brother, walking my dog, and not taking myself seriously. I have done somethhings, check them out on the side!</p>
 		</div>
 		<div class="speak">
-			<p> <video width="400" height="200" controls>
+			<video controls>
 		  <source src="20under20.mp4" type="video/mp4">
 		  <source src="movie.ogg" type="video/ogg">
 		  <source src="movie.webm" type="video/webm">
@@ -63,21 +70,20 @@ $(document).ready(function(){
 		  </object> 
 		</video>
 
-		<video width="400" height="200" controls>
-		  <source src="../movies/thieldoc.mp4" type="video/mp4">
-		  <source src="movie.ogg" type="video/ogg">
-		  <source src="movie.webm" type="video/webm">
-		  <object data="../movies/thieldoc.mp4" width="400" height="240">
-		    <embed src="../movies/thieldoc.mp4" width="400" height="240">
-		  </object> 
-		</video>
 	
-		<video width="400" height="200" controls>
+		<video controls>
 		  <source src="ted.mp4" type="video/mp4">
 		  <source src="movie.ogg" type="video/ogg">
 		  <source src="movie.webm" type="video/webm">
 		  <object data="ted.mp4" width="400" height="240">
 		    <embed src="ted.swf" width="400" height="240">
+		  </object> 
+		</video>
+
+		<video controls>
+		  <source src="../movies/thieldoc.mp4" type="video/mp4">
+		  <object data="../movies/thieldoc.mp4" width="400" height="240">
+		    <embed src="../movies/thieldoc.mp4" width="400" height="240">
 		  </object> 
 		</video>
 
@@ -96,7 +102,7 @@ $(document).ready(function(){
 		
 
 		</div>
-		<div class="learn">
+		<div id="learn">
 			<p class="images">
 				<a href="https://github.com/raksonibs"><img id="git" src="./github.png"></a>
 				
